@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IDX — Optimization. Automation. Intelligence.</title>
+  <meta name="description" content="INDEX — Marketing site prototype with a professional designer eye and interactive Three.js hero." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="nav wrap" role="navigation" aria-label="Main">
+      <div class="logo"><div class="mark">SP</div><div>Sechaba Phangoa</div></div>
+      <nav class="navi">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#tools">Tools</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="toggle-theme" onclick="toggleTheme()">
+        <i class="theme-icon moon fas fa-moon"></i>
+        <i class="theme-icon sun fas fa-sun"></i>
+      </button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+  <div class="kicker">Full-Stack Developer</div>
+  <h1>Sechaba Phangoa — Freelance Full-Stack Developer & Graphic Designer</h1>
+  <p class="lead">“Building smart, connected digital experiences.” I create full-stack web apps, mobile mini-apps and design systems that combine clean design with powerful functionality.</p>
+        <div class="cta">
+          <button class="btn btn-primary" onclick="scrollToSection('contact')">Request a Service</button>
+          <button class="btn btn-ghost" onclick="scrollToSection('work')">See Resume</button>
+        </div>
+        <div class="cards">
+          <div class="card"><strong>Full-Stack</strong><small>React · NodeJS · MySQL</small></div>
+          <div class="card"><strong>MiniApps</strong><small>Alipay Mini Program</small></div>
+          <div class="card"><strong>Design</strong><small>UI & Visual Systems</small></div>
+        </div>
+      </div>
+
+       <div class="hero-right">
+        <img src="resources/images/hero.jpg" alt="Hero image" style="width:100%; height:100%; object-fit:cover; border-radius:18px; ">
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="headerstyle">
+        <h2 style="margin:0">About Me</h2>
+        <p>I'm Sechaba Phangoa, a Full-Stack Developer and designer focused on building web apps and Mini Programs that are both useful and delightful.</p>
+      </div>
+      <div style="margin-top:28px" class="grid-3">
+        <div class="feature"><h3>Background</h3><p style="color:var(--muted)">I build full-stack web and mobile mini-apps, combining clean UI with pragmatic engineering. My focus is on usability, performance and real-world impact.</p></div>
+        <div class="feature"><h3>Technical Skills</h3><p style="color:var(--muted)">React.js, HTML5, CSS3, JavaScript, Ant Design Mini, Node.js, Express.js, MySQL, MongoDB, Alipay Mini Program Studio (AXML, ACSS, JS).</p></div>
+        <div class="feature"><h3>Tools & Workflow</h3><p style="color:var(--muted)">Git & GitHub, API integration, RESTful APIs, prototyping, and design systems.</p></div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="headerstyle">
+        <p>Selected projects that demonstrate our approach to product-led design, high-performance front-end experiences, and measurable impact for clients.</p>
+        <h2 style="margin:0">Selected Work</h2>
+      </div>
+      <div class="work-grid">
+        <div class="work-card work-card-large">
+          <div class="work-visual">
+            <div class="product-showcase">
+              <div class="showcase-header">
+                <div class="showcase-buttons">
+                  <div class="showcase-btn showcase-btn-red"></div>
+                  <div class="showcase-btn showcase-btn-yellow"></div>
+                  <div class="showcase-btn showcase-btn-green"></div>
+                </div>
+                <div class="showcase-title">Product Launch</div>
+              </div>
+              <div class="showcase-content">
+                <div class="launch-metrics">
+                  <div class="metric-item">
+                    <div class="metric-value">3.2x</div>
+                    <div class="metric-label">Conversion Rate</div>
+                  </div>
+                  <div class="metric-item">
+                    <div class="metric-value">+47%</div>
+                    <div class="metric-label">Engagement</div>
+                  </div>
+                  <div class="metric-item">
+                    <div class="metric-value">2.1s</div>
+                    <div class="metric-label">Load Time</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <h3 class="work-category">Product Launch</h3>
+            <p class="work-title">High-converting launch page with storytelling animations</p>
+            <p class="work-description">Created a compelling product launch experience that combines storytelling with data-driven design to maximize conversions and user engagement.</p>
+          </div>
+        </div>
+        
+        <div class="work-card work-card-small">
+          <div class="work-visual">
+            <div class="video-showcase">
+              <div class="video-player">
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+                <div class="video-overlay">
+                  <div class="video-title">Introduction</div>
+                  <div class="video-duration">2:34</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <h3 class="work-category">Video Content</h3>
+            <p class="work-title">Introducing myself</p>
+            <p class="work-description">Short, compelling narrative with clear CTAs and data highlights.</p>
+          </div>
+        </div>
+        
+        <div class="work-card work-card-small">
+          <div class="work-visual">
+            <div class="interaction-demo">
+              <div class="demo-elements">
+                <div class="demo-button">
+                  <span>Hover me</span>
+                </div>
+                <div class="demo-card">
+                  <div class="card-shine"></div>
+                </div>
+                <div class="demo-loading">
+                  <div class="loading-spinner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <h3 class="work-category">UX Design</h3>
+            <p class="work-title">Micro-Interactions</p>
+            <p class="work-description">Small moments that make the product feel premium and trusted.</p>
+          </div>
+        </div>
+        
+        <div class="work-card work-card-large">
+          <div class="work-visual">
+            <div class="ecommerce-dashboard">
+              <div class="dashboard-header">
+                <div class="dashboard-title">E-commerce Platform</div>
+                <div class="dashboard-status">
+                  <div class="status-indicator"></div>
+                  <span>Live</span>
+                </div>
+              </div>
+              <div class="dashboard-metrics">
+                <div class="metric-row">
+                  <div class="metric-box">
+                    <div class="metric-icon">
+                      <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="metric-info">
+                      <div class="metric-number">1,247</div>
+                      <div class="metric-text">Orders</div>
+                    </div>
+                  </div>
+                  <div class="metric-box">
+                    <div class="metric-icon">
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="metric-info">
+                      <div class="metric-number">$24.5K</div>
+                      <div class="metric-text">Revenue</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <h3 class="work-category">E-commerce</h3>
+            <p class="work-title">Complete online store with seamless checkout</p>
+            <p class="work-description">Built a comprehensive e-commerce platform with inventory management, payment processing, and analytics dashboard.</p>
+          </div>
+        </div>
+        
+        <div class="work-card work-card-small">
+          <div class="work-visual">
+            <div class="mobile-mockup">
+              <div class="phone-frame">
+                <div class="phone-screen">
+                  <div class="app-header">
+                    <div class="app-title">Mobile App</div>
+                    <div class="app-menu">
+                      <div class="menu-dot"></div>
+                      <div class="menu-dot"></div>
+                      <div class="menu-dot"></div>
+                    </div>
+                  </div>
+                  <div class="app-content">
+                    <div class="content-card"></div>
+                    <div class="content-card"></div>
+                    <div class="content-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <h3 class="work-category">Mobile Design</h3>
+            <p class="work-title">Mobile App Design</p>
+            <p class="work-description">Intuitive mobile interface with smooth animations and user-friendly navigation.</p>
+          </div>
+        </div>
+        
+        <div class="work-card work-card-small">
+          <div class="work-visual">
+            <div class="brand-showcase">
+              <div class="brand-logo">
+                <div class="logo-shape"></div>
+                <div class="logo-text">BRAND</div>
+              </div>
+              <div class="brand-colors">
+                <div class="color-swatch" style="background: #ff6b35;"></div>
+                <div class="color-swatch" style="background: #00e6b8;"></div>
+                <div class="color-swatch" style="background: #2bd1ff;"></div>
+                <div class="color-swatch" style="background: #666666;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="work-content">
+            <h3 class="work-category">Brand Identity</h3>
+            <p class="work-title">Brand Identity</p>
+            <p class="work-description">Comprehensive brand system with logo, colors, and visual guidelines.</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Technologies marquee (placed under Team) -->
+    <section class="tech-marquee" id="tools" aria-label="Technologies we use">
+      <div class="headerstyle">
+        <p>I deliver Products and servuices using this Tools & Technologies</p>
+        <h2 style="margin:0">Tools & Technologies</h2>
+      </div>
+      <br>
+      <div class="track-wrap">
+        <div class="track" aria-hidden="false">
+          <div class="item" aria-label="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/></div>
+          <div class="item" aria-label="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/></div>
+          <div class="item" aria-label="CSS3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/></div>
+          <div class="item" aria-label="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/></div>
+          <div class="item" aria-label="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"/></div>
+          <div class="item" aria-label="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/></div>
+          <div class="item" aria-label="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/></div>
+          <div class="item" aria-label="Express.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"/></div>
+          <div class="item" aria-label="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/></div>
+          <div class="item" aria-label="MongoDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/></div>
+        </div>
+        <div class="track" aria-hidden="true">
+          <div class="item" aria-label="React"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"/></div>
+          <div class="item" aria-label="HTML5"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/></div>
+          <div class="item" aria-label="CSS3"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/></div>
+          <div class="item" aria-label="JavaScript"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/></div>
+          <div class="item" aria-label="Next.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js"/></div>
+          <div class="item" aria-label="Python"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/></div>
+          <div class="item" aria-label="Node.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/></div>
+          <div class="item" aria-label="Express.js"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"/></div>
+          <div class="item" aria-label="MySQL"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/></div>
+          <div class="item" aria-label="MongoDB"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"/></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-left">
+          <h3>Get in Touch</h3>
+          <p style="color:var(--muted);margin-bottom:24px">We're here to help bring your vision to life. Reach out and let's create something amazing together.</p>
+          
+          <div class="contact-info">
+            <div class="contact-item">
+              <div>
+                <strong>Address</strong>
+                <p>Ha Abia<br>Maseru 100, Lesotho</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div>
+                <strong>Phone</strong>
+                <p>(+266) 50224174</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div>
+                <strong>Emails</strong>
+                <p>sjphangoa@gmail.com</p>
+                <p>sjphangoa@teqsolutions.co.ls</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div>
+                <strong>Hours</strong>
+                <p>Mon-Fri: 9AM-6PM<br>Weekend: By appointment</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-right">
+          <h3>Send us a message</h3>
+          <p style="color:var(--muted);margin-bottom:20px">Tell us about your project and we'll reply within 2 business days.</p>
+          <form class="contact-form" onsubmit="event.preventDefault();alert('Thanks — demo form submitted')">
+            <div class="form-row">
+              <input required placeholder="Name" class="form-input">
+              <input required placeholder="Email" type="email" class="form-input">
+            </div>
+            <textarea required placeholder="Brief project description" class="form-textarea"></textarea>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© Sechaba Phangoa — Full-Stack Developer</div>
+        <div style="color:var(--muted)">Building smart, connected digital experiences</div>
+      </div>
+    </footer>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
